@@ -1,0 +1,200 @@
+//botones
+input[type="submit"]{
+   @include button(darken($primary-color,10%), white, radius);
+}
+body{
+  //background: rgb(242,	242	,242);
+}
+
+.clearfix{
+    @include clearfix;
+}
+#content{
+    margin-top: 10px;
+    padding-top: 20px;
+    //border-top: 1px solid #ddd;
+    img{
+        //width: 100%;
+    }
+
+}
+
+a{
+    color: $secondary-color;
+}
+#page{
+    // @include edContainer;
+    overflow: hidden;
+    #content{
+        @include edContainer;
+        padding-bottom: 30px;
+        #primary{
+          //background: #fff;
+          @include edItem(100,100,70);
+            //border:1px solid #ccc;
+        }
+
+        #secondary{
+            // border:1px solid #ccc;
+            //background: #fff;
+            border:1px solid $primary-color;
+            padding: 10px 20px;
+            border-radius: 7px;
+            @include edItem(100,100,30);
+        }
+    }
+}
+
+header.entry-header{
+    .entry-title{
+        font-size: 2.5em;
+        color: #333;
+    }
+    .entry-meta{
+        padding: 10px 5px;
+        color: #333;
+    }
+}
+
+#content .entry-image img{
+    width: 100%;
+}
+
+// Nav links seguir leyendo
+nav.post-navigation{
+    h2{
+        font-size: 1.5em;
+        color:#333;
+    }
+    .nav-links{
+        a{
+            color:#fff;
+            background: $secondary-color;
+            padding: 5px 10px;
+            float: left;
+            margin-left:10px;
+
+        }
+
+    }
+}
+
+// Comentarios
+#comments{
+    margin-top: 20px;
+    border-top:2px solid #ddd;
+    h3{
+        color:#333;
+    }
+
+    form{
+        .comment-form-comment{
+            label{
+                display: block;
+            }
+            textarea{
+                margin-top: 10px;
+                width: 100%;
+                border:1px solid #ddd;
+                padding: 10px;
+                font-size: 1.2em;
+                color:#333;
+            }
+        }
+        input[type="submit"]{
+            font-size: 1.2em;
+        }
+    }
+}
+
+//Post protegido por password
+.post-password-form{
+    padding: 20px 0;
+    //color:$secondary-color;
+    font-size: 1em;
+    input{
+        font-size: 1em;
+        &[type="password"]{
+            padding:10px 15px;
+        }
+    }
+}
+
+footer.entry-footer{
+    & > span{
+        display: block;
+        font-size: 1.1em;
+
+        &.edit-link{
+            margin-top: 10px;
+            font-size: .9em;
+            a{
+                color: #fff;
+                @include button($primary-color,#fffff, radius);
+            }
+
+        }
+    }
+}
+
+//esto es para los comentarios de cada blog.
+
+ol.comment-list{
+    list-style: none;
+
+    li{
+        margin-bottom: 20px;
+        article{
+            .comment-meta{
+                .comment-author {
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .comment-metadata{
+                    margin-top: 5px;
+                    & > a {
+                        font-size: .8em;
+                    }
+                    & > span a{
+                        font-size: .8em;
+                        background: $secondary-color;
+                        color: #fff;
+                        border-radius: 5px;
+                        padding:3px 5px;
+                        //@include button($secondary-color,#fff,radius);
+                    }
+                }
+            }
+            .reply a{
+                font-size: .8em;
+                @include button(#2e84e6,#fff,round);
+            }
+        }
+    }
+}
+
+//galeria style
+
+.entry-content .gallery{
+    margin: 20px 0;
+    @include grid('.gallery-item', 1, 2, 3);
+    .gallery-item{
+        border:4px solid #eee;
+        padding-bottom:5px;
+
+        text-align:center;
+        .gallery-caption{
+            color: #333;
+            font-size: .8em;
+        }
+    }
+}
+
+
+//tpl team
+.tlp-single-details{
+  ul{
+    list-style: none;
+  }
+}

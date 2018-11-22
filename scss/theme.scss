@@ -1,0 +1,10 @@
+$cssCore    : false;
+$cssHelpers : true ;
+$devMode    : false ;
+@import '../ed-grid/ed-grid';
+
+//estilos para la pagina
+@import "components/base";
+@import "components/header";
+@import "components/page";
+@import "components/footer";

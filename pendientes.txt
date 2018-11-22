@@ -1,0 +1,11 @@
+posicion en team , traducible
+
+traducir apadrinar y testimonios , craear plugin si es necesario , y tambien si es posible video
+
+
+revisar el plugin de slidershow para ver si es traducible.
+
+menu queda pendiente de maquetacion.
+noticias que muestre los posts usando display-post.
+
+slider inicio poner ancho 100%

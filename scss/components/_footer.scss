@@ -1,0 +1,51 @@
+footer{
+	.footer-sidebars{
+		margin-bottom: 30px;
+		@include edContainer;
+		.footer-item{
+			@include edItem(100,100,40);
+			margin-bottom:10px;
+		}
+		.footer-item-2{
+			@include edItem(100,100,60);
+			margin-bottom: 10px;
+		}
+	}
+
+	ul#menu-iglesia{
+		background: darken($primary-color,10%);
+		border-radius: 7px;
+		@include grid('li',1,2,4,4,20px)
+		& > li > a{
+			text-transform: uppercase;;
+		}
+		a{
+			font-weight: normal!important;
+			font-size: .9em;
+			color: #fff;//darken($secondary-color,10%);
+			&:hover{
+				color: $secondary-color;
+				text-decoration: none;
+			}
+		}
+		ul{
+			//border:1px solid red;
+			margin-left: 0px;
+			padding-left: 30px;
+			li{
+				margin-left:0px;
+				list-style-type: square;
+			}
+		}
+	}
+}
+footer.site-footer{
+	background: lighten($primary-color,10%);
+	padding:40px 10px;
+
+	.site-info{
+		@include toCenter(100%);
+	}
+}
+
+//agregamos un estilo desde css , usando mi mac nueva !
